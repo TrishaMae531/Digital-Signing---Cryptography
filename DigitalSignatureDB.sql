@@ -1,0 +1,8 @@
+CREATE DATABASE DigitalSignatureDB;
+USE DigitalSignatureDB;
+
+CREATE TABLE Users (
+    UserID INT AUTO_INCREMENT PRIMARY KEY,
+    Username VARCHAR(50) NOT NULL UNIQUE,
+    PublicKey TEXT NOT NULL
+);
